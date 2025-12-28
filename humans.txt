@@ -1,15 +1,8 @@
 /* TEAM */
 Organization: QiAlly
 Site: https://qially.com
-Location: Global
+Role: Solo-practitioner consulting
+Focus: Tax resolution, accounting cleanup, operations, systems & AI
+Values: Clarity, accuracy, and intentional delivery.
 
-/* SITE */
-Standards: HTML5, CSS3, JavaScript
-Components: Static HTML with Tailwind CSS
-Hosting: Cloudflare Pages
-Analytics: Cloudflare Web Analytics
-
-/* THANKS */
-Built with care for clarity, speed, and accessibility.
-Last update: 2025-12-04
-
+Last update: 2025-12-28
