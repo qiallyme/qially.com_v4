@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT & AI Consulting | QiAlly</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Inter', 'sans-serif'], serif: ['Playfair Display', 'serif'] },
+                    colors: { 'brand-bg': '#f8fafc' }
+                }
+            }
+        }
+    </script>
+    <style>
+        .blob-bg {
+            position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; z-index: -1;
+            background: radial-gradient(circle at 10% 20%, rgba(221, 214, 254, 0.4), transparent 25%), 
+                        radial-gradient(circle at 90% 80%, rgba(237, 233, 254, 0.4), transparent 25%);
+            filter: blur(40px);
+        }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.6);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased relative">
+    <div class="blob-bg"></div>
+
+    <nav class="w-full py-6 px-8 flex justify-between items-center max-w-7xl mx-auto">
+        <a href="/" class="font-serif text-2xl font-bold text-slate-900">Qi<span class="text-violet-600 font-light italic">Ally</span></a>
+        <a href="/" class="text-sm font-medium text-slate-500 hover:text-violet-600">&larr; Back to Home</a>
+    </nav>
+
+    <header class="pt-12 pb-20 px-6">
+        <div class="max-w-4xl mx-auto text-center">
+            <span class="text-violet-600 font-bold tracking-widest text-xs uppercase mb-4 block">Division Focus</span>
+            <h1 class="text-4xl md:text-5xl font-serif text-slate-900 mb-6">IT & AI Consulting</h1>
+            <p class="text-xl text-slate-500 font-light leading-relaxed">
+                Leveraging automation and artificial intelligence to modernize your tech stack. We build solutions that work smarter, not harder.
+            </p>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-6 pb-20">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+            
+            <div class="lg:col-span-2 space-y-8">
+                <div class="glass-panel p-8 rounded-2xl">
+                    <h3 class="font-serif text-2xl mb-6">Core Capabilities</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-check text-violet-500 mt-1"></i>
+                            <div>
+                                <strong class="block text-slate-900">Business Process Automation</strong>
+                                <span class="text-slate-500 text-sm">Streamline operations with intelligent automation that reduces manual work and eliminates bottlenecks.</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-check text-violet-500 mt-1"></i>
+                            <div>
+                                <strong class="block text-slate-900">Custom Web Development</strong>
+                                <span class="text-slate-500 text-sm">Build scalable web applications, client portals, and internal tools tailored to your business needs.</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-check text-violet-500 mt-1"></i>
+                            <div>
+                                <strong class="block text-slate-900">Knowledge Management Systems</strong>
+                                <span class="text-slate-500 text-sm">Organize and leverage business knowledge with AI-powered RAG systems and intelligent search.</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-check text-violet-500 mt-1"></i>
+                            <div>
+                                <strong class="block text-slate-900">AI Integration & Consulting</strong>
+                                <span class="text-slate-500 text-sm">Strategic guidance on implementing AI tools and automation that deliver real business value.</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="glass-panel p-8 rounded-2xl">
+                    <h3 class="font-serif text-2xl mb-4">Why This Matters</h3>
+                    <p class="text-slate-600 leading-relaxed">
+                        Technology should serve your business, not complicate it. We focus on solutions that eliminate friction, automate repetitive tasks, and give you the tools to scale efficiently. Every system we build is designed to save you time and reduce operational overhead.
+                    </p>
+                </div>
+            </div>
+
+            <div class="lg:col-span-1">
+                <div class="bg-slate-900 text-white p-8 rounded-2xl sticky top-8">
+                    <h3 class="font-serif text-xl mb-4">Ready to optimize?</h3>
+                    <p class="text-slate-400 text-sm mb-6">Schedule a 15-minute discovery call to discuss your specific needs.</p>
+                    <a href="/#contact" class="block w-full text-center bg-violet-600 hover:bg-violet-500 text-white py-3 rounded-lg font-medium transition">Book Consultation</a>
+                    
+                    <div class="mt-8 pt-8 border-t border-slate-700">
+                        <p class="text-xs text-slate-500 uppercase tracking-wider mb-2">Direct Contact</p>
+                        <a href="mailto:cody@qially.com" class="text-white hover:text-blue-400 transition">cody@qially.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="text-center py-8 text-slate-400 text-xs">
+        &copy; 2025 QiAlly LLC.
+    </footer>
+
+    <!-- ElevenLabs ConvAI Widget -->
+    <elevenlabs-convai agent-id="agent_5601kb789hcyfrw928kr2a0ged3z"></elevenlabs-convai>
+    <script src="https://unpkg.com/@elevenlabs/convai-widget-embed" async type="text/javascript"></script>
+
+</body>
+</html>

@@ -1,0 +1,58 @@
+########################
+# NONE (DO NOT TRACK)  #
+########################
+
+/.trunk/
+/node_modules/
+/tree-maker/
+/venv/
+/.env
+/desktop.ini
+/mdSilo-all.json
+/.archive/
+/.legacy/
+/.lfs/
+
+###############################
+# IGNORE GIANT STORAGE ZONES  #
+###############################
+
+# Ignore any `.lfs` folder anywhere in the tree
+**/.lfs/
+
+# Ignore any `.archive` folder anywhere
+**/.archive/
+
+# Ignore any `.legacy` folder anywhere
+**/.legacy/
+
+
+########################
+# SUB-REPOS (OWN GIT)  #
+########################
+
+/_intake/
+/apps/
+/data/
+/projects/
+/realms/
+/sites/
+
+
+########################
+# GENERIC SAFE IGNORES #
+########################
+
+# Python
+**/__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Logs (optional)
+logs/
+*.log

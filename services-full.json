@@ -1,0 +1,105 @@
+{
+  "services": [
+    {
+      "id": "business-automation",
+      "title": "Business Process Automation",
+      "slug": "business-process-automation",
+      "description": "Streamline your operations with intelligent automation solutions that reduce manual work and increase efficiency.",
+      "longDescription": "Transform repetitive tasks into automated workflows. We design, implement, and optimize automation solutions that free your team to focus on high-value work.",
+      "features": [
+        "Workflow Design & Analysis",
+        "Integration Setup & Configuration",
+        "Performance Monitoring & Optimization",
+        "Custom Automation Scripts",
+        "Process Documentation"
+      ],
+      "benefits": [
+        "Reduce manual data entry by 80%",
+        "Eliminate repetitive tasks",
+        "Improve accuracy and consistency",
+        "Save 10-20 hours per week"
+      ],
+      "technologies": ["Zapier", "Make.com", "Python", "Node.js", "APIs"],
+      "pricing": {
+        "starting": "$2,500",
+        "type": "project"
+      }
+    },
+    {
+      "id": "web-development",
+      "title": "Custom Web Development",
+      "slug": "custom-web-development",
+      "description": "Build scalable web applications tailored to your business needs with modern technologies.",
+      "longDescription": "From client portals to internal tools, we build web applications that solve real business problems. Modern, fast, and maintainable.",
+      "features": [
+        "React & Node.js Development",
+        "Database Design & Optimization",
+        "API Development & Integration",
+        "Responsive Design",
+        "Cloud Deployment"
+      ],
+      "benefits": [
+        "Custom solutions for unique needs",
+        "Scalable architecture",
+        "Modern tech stack",
+        "Ongoing support & maintenance"
+      ],
+      "technologies": ["React", "Node.js", "PostgreSQL", "Supabase", "Cloudflare"],
+      "pricing": {
+        "starting": "$5,000",
+        "type": "project"
+      }
+    },
+    {
+      "id": "knowledge-management",
+      "title": "Knowledge Management Systems",
+      "slug": "knowledge-management",
+      "description": "Organize and leverage your business knowledge with AI-powered RAG systems and intelligent search.",
+      "longDescription": "Turn your scattered knowledge into an organized, searchable asset. AI-powered search and retrieval makes finding information instant.",
+      "features": [
+        "Content Organization & Structure",
+        "AI Integration (RAG Systems)",
+        "Search Optimization",
+        "Knowledge Base Design",
+        "Documentation Systems"
+      ],
+      "benefits": [
+        "Find information in seconds",
+        "Reduce knowledge silos",
+        "Onboard new team members faster",
+        "Capture institutional knowledge"
+      ],
+      "technologies": ["RAG/Vector DBs", "AI APIs", "Markdown", "Search Engines"],
+      "pricing": {
+        "starting": "$3,000",
+        "type": "project"
+      }
+    },
+    {
+      "id": "client-portals",
+      "title": "Client Portal Development",
+      "slug": "client-portal-development",
+      "description": "Create secure, user-friendly portals that enhance client experience and streamline communication.",
+      "longDescription": "Give your clients a branded, secure space to collaborate, share documents, and track progress. Improve client satisfaction and reduce admin overhead.",
+      "features": [
+        "User Authentication & Security",
+        "Real-time Collaboration Tools",
+        "Document Management System",
+        "Custom Branding",
+        "Mobile-Responsive Design"
+      ],
+      "benefits": [
+        "Professional client experience",
+        "Secure document sharing",
+        "Reduce email overload",
+        "Track client interactions"
+      ],
+      "technologies": ["React", "Supabase", "Auth0", "Cloudflare", "S3/Storage"],
+      "pricing": {
+        "starting": "$4,000",
+        "type": "project"
+      }
+    }
+  ]
+}
+

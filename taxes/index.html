@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tax & Accounts | QiAlly</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Inter', 'sans-serif'], serif: ['Playfair Display', 'serif'] },
+                    colors: { 'brand-bg': '#f8fafc' }
+                }
+            }
+        }
+    </script>
+    <style>
+        .blob-bg {
+            position: fixed; top: 0; left: 0; width: 100vw; height: 100vh; z-index: -1;
+            background: radial-gradient(circle at 10% 20%, rgba(209, 250, 229, 0.4), transparent 25%), 
+                        radial-gradient(circle at 90% 80%, rgba(167, 243, 208, 0.4), transparent 25%);
+            filter: blur(40px);
+        }
+        .glass-panel {
+            background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.6);
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased relative">
+    <div class="blob-bg"></div>
+
+    <nav class="w-full py-6 px-8 flex justify-between items-center max-w-7xl mx-auto">
+        <a href="/" class="font-serif text-2xl font-bold text-slate-900">Qi<span class="text-emerald-600 font-light italic">Ally</span></a>
+        <a href="/" class="text-sm font-medium text-slate-500 hover:text-emerald-600">&larr; Back to Home</a>
+    </nav>
+
+    <header class="pt-12 pb-20 px-6">
+        <div class="max-w-4xl mx-auto text-center">
+            <span class="text-emerald-600 font-bold tracking-widest text-xs uppercase mb-4 block">Division Focus</span>
+            <h1 class="text-4xl md:text-5xl font-serif text-slate-900 mb-6">Tax & Accounts</h1>
+            <p class="text-xl text-slate-500 font-light leading-relaxed">
+                Strategic tax planning, bookkeeping, and financial compliance for small businesses. We keep your finances organized and your tax strategy optimized.
+            </p>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-6 pb-20">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+            
+            <div class="lg:col-span-2 space-y-8">
+                <div class="glass-panel p-8 rounded-2xl">
+                    <h3 class="font-serif text-2xl mb-6">Core Capabilities</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-check text-emerald-500 mt-1"></i>
+                            <div>
+                                <strong class="block text-slate-900">Tax Planning & Strategy</strong>
+                                <span class="text-slate-500 text-sm">Proactive tax planning to minimize liabilities and maximize deductions throughout the year.</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-check text-emerald-500 mt-1"></i>
+                            <div>
+                                <strong class="block text-slate-900">Bookkeeping & Financial Records</strong>
+                                <span class="text-slate-500 text-sm">Accurate, organized financial records that give you real-time insight into your business health.</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-check text-emerald-500 mt-1"></i>
+                            <div>
+                                <strong class="block text-slate-900">Tax Preparation & Filing</strong>
+                                <span class="text-slate-500 text-sm">Complete tax return preparation for businesses and individuals, ensuring compliance and accuracy.</span>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-check text-emerald-500 mt-1"></i>
+                            <div>
+                                <strong class="block text-slate-900">Financial Compliance</strong>
+                                <span class="text-slate-500 text-sm">Stay compliant with federal, state, and local tax requirements. We handle the complexity so you don't have to.</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="glass-panel p-8 rounded-2xl">
+                    <h3 class="font-serif text-2xl mb-4">Why This Matters</h3>
+                    <p class="text-slate-600 leading-relaxed">
+                        Financial clarity is the foundation of smart business decisions. By keeping your books clean and your tax strategy optimized, we free you to focus on growth while ensuring you never miss a deduction or deadline.
+                    </p>
+                </div>
+            </div>
+
+            <div class="lg:col-span-1">
+                <div class="bg-slate-900 text-white p-8 rounded-2xl sticky top-8">
+                    <h3 class="font-serif text-xl mb-4">Ready to optimize?</h3>
+                    <p class="text-slate-400 text-sm mb-6">Schedule a 15-minute discovery call to discuss your specific needs.</p>
+                    <a href="/#contact" class="block w-full text-center bg-emerald-600 hover:bg-emerald-500 text-white py-3 rounded-lg font-medium transition">Book Consultation</a>
+                    
+                    <div class="mt-8 pt-8 border-t border-slate-700">
+                        <p class="text-xs text-slate-500 uppercase tracking-wider mb-2">Direct Contact</p>
+                        <a href="mailto:cody@qially.com" class="text-white hover:text-blue-400 transition">cody@qially.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="text-center py-8 text-slate-400 text-xs">
+        &copy; 2025 QiAlly LLC.
+    </footer>
+
+    <!-- ElevenLabs ConvAI Widget -->
+    <elevenlabs-convai agent-id="agent_5601kb789hcyfrw928kr2a0ged3z"></elevenlabs-convai>
+    <script src="https://unpkg.com/@elevenlabs/convai-widget-embed" async type="text/javascript"></script>
+
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ITIN: Solicitud Virtual Rápida y Segura</title>
+    <!-- Carga de Tailwind CSS para el diseño -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f9fb; /* Fondo muy claro */
+        }
+        .step-icon {
+            /* Estilo para los círculos de los pasos */
+            width: 3rem;
+            height: 3rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Sección Principal / Hero (Azul Marino) -->
+    <header class="bg-blue-900 text-white py-12 shadow-lg">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl sm:text-5xl font-extrabold mb-2 leading-tight">
+                ITIN: ¡Obtenga su Número Fiscal de Forma Virtual!
+            </h1>
+            <p class="text-xl sm:text-2xl font-light opacity-90 mb-6">
+                Proceso Simple, Rápido y 100% Remoto. **Oferta Limitada: $150 USD.**
+            </p>
+            <!-- Botón CTA (Verde Esmeralda Brillante) -->
+            <a href="#form-section" class="inline-block bg-green-500 text-blue-900 hover:bg-green-400 font-bold py-3 px-8 rounded-full shadow-xl transition duration-300 transform hover:scale-105">
+                ¡Empiece Hoy Mismo!
+            </a>
+        </div>
+    </header>
+
+    <!-- Sección del Proceso (El "Cómo Funciona") -->
+    <section class="py-16 md:py-24 px-4">
+        <div class="container mx-auto max-w-5xl">
+            <h2 class="text-3xl sm:text-4xl font-bold text-center text-blue-800 mb-12">
+                Nuestro Proceso Virtual ITIN en 4 Pasos Sencillos
+            </h2>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+
+                <!-- Paso 1 -->
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 transform hover:-translate-y-1 border-t-4 border-blue-600">
+                    <div class="step-icon bg-blue-600 text-white rounded-full mb-4 shadow-md">1</div>
+                    <h3 class="text-xl font-semibold text-blue-900 mb-3">Contacto y Envío de Datos</h3>
+                    <p class="text-gray-600">
+                        Complete nuestro formulario de admisión digital (abajo). Necesitaremos una copia de su pasaporte o identificación y sus datos básicos.
+                    </p>
+                </div>
+
+                <!-- Paso 2 -->
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 transform hover:-translate-y-1 border-t-4 border-blue-600">
+                    <div class="step-icon bg-blue-600 text-white rounded-full mb-4 shadow-md">2</div>
+                    <h3 class="text-xl font-semibold text-blue-900 mb-3">Revisión y Pago Expreso</h3>
+                    <p class="text-gray-600">
+                        Nuestro experto revisa sus documentos en 24 horas. Usted realiza el pago seguro de $150 USD. Recibirá los formularios 1040-NR y W-7 listos para firmar.
+                    </p>
+                </div>
+
+                <!-- Paso 3 -->
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 transform hover:-translate-y-1 border-t-4 border-blue-600">
+                    <div class="step-icon bg-blue-600 text-white rounded-full mb-4 shadow-md">3</div>
+                    <h3 class="text-xl font-semibold text-blue-900 mb-3">Notarización Virtual (Si Aplica)</h3>
+                    <p class="text-gray-600">
+                        Si es necesario, coordinamos una sesión de notarización virtual para certificar su identificación sin que salga de casa.
+                    </p>
+                </div>
+
+                <!-- Paso 4 -->
+                <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-2xl transition duration-300 transform hover:-translate-y-1 border-t-4 border-blue-600">
+                    <div class="step-icon bg-blue-600 text-white rounded-full mb-4 shadow-md">4</div>
+                    <h3 class="text-xl font-semibold text-blue-900 mb-3">Envío y Seguimiento del IRS</h3>
+                    <p class="text-gray-600">
+                        Enviamos su paquete ITIN completo al IRS. Le proporcionaremos el número de seguimiento para que esté al tanto de su solicitud.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección del Formulario de Admisión (Intake Form) -->
+    <section id="form-section" class="bg-white py-16 md:py-24 px-4 shadow-inner">
+        <div class="container mx-auto max-w-4xl">
+            <!-- Título en Verde Esmeralda -->
+            <h2 class="text-3xl sm:text-4xl font-bold text-center text-emerald-600 mb-4">
+                ¡EMPIECE SU SOLICITUD HOY!
+            </h2>
+            <p class="text-xl text-center text-gray-600 mb-12">
+                Complete el formulario de admisión a continuación para comenzar la tramitación de su ITIN.
+            </p>
+
+            <!-- Contenedor del Formulario (Placeholder) -->
+            <div class="bg-gray-100 p-6 sm:p-10 rounded-xl border-4 border-dashed border-gray-300">
+                <h3 class="text-2xl font-semibold text-center text-gray-800 mb-6">
+                    Formulario de Admisión Digital (Embed Aquí)
+                </h3>
+
+                <!--
+                    *** INSTRUCCIÓN IMPORTANTE ***
+                    Reemplace el siguiente <iframe> con el código de incrustación (embed code)
+                    de su formulario real (Google Form, Typeform, JotForm, etc.).
+                    Asegúrese de ajustar la altura (height) según su formulario.
+                    El color del placeholder ha sido actualizado a un tono esmeralda.
+                -->
+                <div class="relative overflow-hidden w-full" style="padding-top: 150px; min-height: 400px;">
+                    <iframe 
+                        src="https://placehold.co/600x400/10b981/ffffff?text=Tu+Formulario+de+Admision+ITIN+Aqui" 
+                        title="Formulario de Admisión ITIN"
+                        class="absolute top-0 left-0 w-full h-full border-none rounded-lg shadow-xl"
+                        loading="lazy"
+                        style="min-height: 400px;"
+                    ></iframe>
+                </div>
+                
+                <p class="mt-8 text-center text-sm text-gray-500">
+                    Al completar este formulario, un especialista se pondrá en contacto con usted en las próximas 24 horas hábiles.
+                </p>
+            </div>
+            <!-- Fin Contenedor del Formulario -->
+
+        </div>
+    </section>
+
+    <!-- Llamada a la Acción Final/Footer (Azul Marino) -->
+    <footer class="bg-blue-900 text-white py-10">
+        <div class="container mx-auto px-4 text-center">
+            <h4 class="text-2xl font-bold mb-3">¿Prefiere contactarnos directamente?</h4>
+            <p class="text-lg mb-4">
+                Llámenos para asistencia inmediata o para resolver cualquier duda.
+            </p>
+            <!-- Enlace del teléfono en Verde Esmeralda Suave -->
+            <a href="tel:1800ITINTAX" class="text-emerald-400 text-3xl font-extrabold hover:text-emerald-300 transition duration-300">
+                1-800-ITIN-TAX
+            </a>
+            <p class="mt-4 text-sm opacity-75">
+                © 2024 Su Compañía. Todos los derechos reservados.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>

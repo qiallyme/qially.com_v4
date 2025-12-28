@@ -1,0 +1,15 @@
+/* TEAM */
+Organization: QiAlly
+Site: https://qially.com
+Location: Global
+
+/* SITE */
+Standards: HTML5, CSS3, JavaScript
+Components: Static HTML with Tailwind CSS
+Hosting: Cloudflare Pages
+Analytics: Cloudflare Web Analytics
+
+/* THANKS */
+Built with care for clarity, speed, and accessibility.
+Last update: 2025-12-04
+

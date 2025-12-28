@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Individual Services | QiAlly</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body { font-family: 'Inter', sans-serif; background-color: #fffaf5; } /* Slightly warmer background */
+        h1, h2, h3 { font-family: 'Playfair Display', serif; }
+        .paper-card { background: white; border: 1px solid #e2e8f0; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05); }
+    </style>
+</head>
+<body class="text-slate-800">
+
+    <nav class="w-full py-6 px-8 flex justify-between items-center max-w-7xl mx-auto border-b border-orange-100">
+        <a href="/" class="font-serif text-2xl font-bold text-slate-900">Qi<span class="text-orange-600 font-light italic">Ally</span></a>
+        <a href="/" class="text-sm font-medium text-slate-500 hover:text-orange-600">&larr; Back to Home</a>
+    </nav>
+
+    <header class="py-16 text-center px-4">
+        <h1 class="text-4xl md:text-5xl font-serif text-slate-900 mb-4">Individual Services</h1>
+        <p class="max-w-2xl mx-auto text-lg text-slate-500">Professional, confidential document preparation and administrative assistance for you and your family.</p>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 pb-20 grid md:grid-cols-2 gap-8">
+        
+        <div class="paper-card p-8 rounded-xl border-t-4 border-orange-500">
+            <div class="flex items-center gap-4 mb-6">
+                <div class="w-12 h-12 bg-orange-100 rounded-full flex items-center justify-center text-orange-600 text-xl"><i class="fa-solid fa-passport"></i></div>
+                <h2 class="text-2xl font-medium">Immigration Support</h2>
+            </div>
+            <p class="text-slate-500 mb-6 text-sm">Assistance with compiling evidence, translating declarations, and filling out USCIS forms. <br><em class="text-xs text-slate-400">*Not legal representation. Document preparation only.</em></p>
+            
+            <ul class="space-y-4 mb-8">
+                <li class="flex justify-between items-center border-b border-slate-100 pb-2">
+                    <span>I-765 (Work Authorization)</span>
+                    <span class="text-sm font-bold text-slate-900">Prep Only</span>
+                </li>
+                <li class="flex justify-between items-center border-b border-slate-100 pb-2">
+                    <span>I-589 (Asylum Application)</span>
+                    <span class="text-sm font-bold text-slate-900">Prep Only</span>
+                </li>
+                <li class="flex justify-between items-center border-b border-slate-100 pb-2">
+                    <span>Personal Declarations</span>
+                    <span class="text-sm font-bold text-slate-900">Drafting/Editing</span>
+                </li>
+            </ul>
+            <a href="/#contact" class="block text-center py-2 px-4 border border-orange-500 text-orange-600 rounded hover:bg-orange-50 transition">Request Assistance</a>
+        </div>
+
+        <div class="paper-card p-8 rounded-xl border-t-4 border-blue-500">
+             <div class="flex items-center gap-4 mb-6">
+                <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 text-xl"><i class="fa-solid fa-file-signature"></i></div>
+                <h2 class="text-2xl font-medium">Document & Admin</h2>
+            </div>
+            <p class="text-slate-500 mb-6 text-sm">Handling the red tape so you don't have to. Rapid turnaround for essential paperwork.</p>
+
+             <ul class="space-y-4 mb-8">
+                <li class="flex justify-between items-center border-b border-slate-100 pb-2">
+                    <span>Resume/CV Rebranding</span>
+                    <span class="text-sm font-bold text-slate-900">Custom</span>
+                </li>
+                <li class="flex justify-between items-center border-b border-slate-100 pb-2">
+                    <span>Notary Services</span>
+                    <span class="text-sm font-bold text-slate-900">Coming Soon</span>
+                </li>
+                <li class="flex justify-between items-center border-b border-slate-100 pb-2">
+                    <span>Letter Drafting</span>
+                    <span class="text-sm font-bold text-slate-900">Per Document</span>
+                </li>
+            </ul>
+            <a href="/#contact" class="block text-center py-2 px-4 border border-blue-500 text-blue-600 rounded hover:bg-blue-50 transition">Start a Project</a>
+        </div>
+    </main>
+
+    <!-- ElevenLabs ConvAI Widget -->
+    <elevenlabs-convai agent-id="agent_5601kb789hcyfrw928kr2a0ged3z"></elevenlabs-convai>
+    <script src="https://unpkg.com/@elevenlabs/convai-widget-embed" async type="text/javascript"></script>
+
+</body>
+</html>
