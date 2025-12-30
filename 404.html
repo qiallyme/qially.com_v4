@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>404 - Profile Not Found | QiAlly</title>
+    <title>404 - Path Discrepancy | QiAlly</title>
     <style>
         :root {
             --primary: #003580;
@@ -16,7 +16,6 @@
         
         body { 
             background-color: #fff; 
-            /* Subtle data-grid background for "Systems" aesthetic */
             background-image: radial-gradient(var(--border) 0.5px, transparent 0.5px);
             background-size: 24px 24px;
             color: var(--text); 
@@ -78,6 +77,17 @@
             font-size: 1rem;
         }
 
+        #dynamic-note {
+            display: none;
+            padding: 12px;
+            background: var(--secondary);
+            border-radius: 6px;
+            font-size: 0.85rem;
+            margin-bottom: 24px;
+            color: var(--primary);
+            font-weight: 500;
+        }
+
         .btn-group {
             display: flex;
             flex-direction: column;
@@ -109,7 +119,6 @@
 
         .btn-outline:hover {
             background: var(--secondary);
-            color: var(--primary);
             box-shadow: none;
         }
 
@@ -126,15 +135,28 @@
     <div class="card">
         <div class="brand">QiAlly</div>
         <div class="error-code">404</div>
-        <h1>Path Mismatch</h1>
-        <p>The system could not locate a profile matching this ID. This usually occurs if a link has expired or if the QID has been re-indexed.</p>
+        <h1 id="error-title">Path Discrepancy</h1>
+        <p id="error-message">The system cannot locate the resource or profile matching this request. This usually occurs if a link is mistyped, expired, or has been re-indexed.</p>
         
+        <div id="dynamic-note">
+            Note: If you are an authorized client, please ensure your QID-slug is correct.
+        </div>
+
         <div class="btn-group">
             <a href="https://qially.com" class="btn">Return to QiAlly.com</a>
-            <a href="mailto:cody@qially.com?subject=Portal Access Support" class="btn btn-outline">Contact Support</a>
+            <a href="mailto:cody@qially.com?subject=Portal Path Support" class="btn btn-outline">Report a Ripple Error</a>
         </div>
 
         <div class="footer-note">Systems Whisperer | Precision Operations</div>
     </div>
+
+    <script>
+        // Snap & Steer: Customize the message based on the URL
+        const path = window.location.href.toLowerCase();
+        if (path.includes('client') || path.includes('qid')) {
+            document.getElementById('error-title').innerText = "Profile Not Found";
+            document.getElementById('dynamic-note').style.display = 'block';
+        }
+    </script>
 </body>
 </html>
